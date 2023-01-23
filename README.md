@@ -1,7 +1,7 @@
 # Bot-battlr
 
 # Description
-This code challenge is about a web application taht allows a user to create a custom bot army from the bot collection displayed at the bottom.
+This code challenge is about a web application taht allows a user to create a custom bot army from the bot collection displayed at the bottom of the page. 
 
 # Installation
 
@@ -43,7 +43,7 @@ This opens our browser window to view the code challenge.
 
 
 # Project set up
-In the browser, you will see a page displayed. This page been split into two, with the top page being blank, since this is where the user should add their bots, and the bottom page displaying a grid of cards with details of different bots.If you want to add a bot to your collection, click on the card of the bot you want to add and it should be added to the top.To remove a bot from your collection, click on the card of the bot to be removed at the top and it should be removed from your collection.
+In the browser, you will see a page displayed. This page been split into two, with the top page being blank, since this is where the user should add their bots, and the bottom page displaying a grid of cards with details of different bots.If you want to add a bot to your collection, click on the card of the bot you want to add and it should be added to the top.To remove a bot from your collection, click on the card of the bot to be removed at the top and it should be removed from your collection. To delete a bot from your collection and the bot collection, click the button with an x.This will remove the button from both collections.
 
 # Details of Author
  This challenge was contributed by:

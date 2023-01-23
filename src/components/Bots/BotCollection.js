@@ -1,6 +1,6 @@
 import React from "react";
 
-function BotCollection({ props, addBot }) {
+function BotCollection({ props, addBot, handleClick }) {
 
   function handleAdd(bot) {
     addBot(bot)
@@ -17,7 +17,7 @@ function BotCollection({ props, addBot }) {
                 <h4>Health: {bot.health}</h4>
                 <h4>Damage: {bot.damage}</h4>
                 <h4>Armor: {bot.armor}</h4>
-                <button>X</button>
+                <button onClick={() => handleClick(bot)}>X</button>
             </div>
         )}
       </div>

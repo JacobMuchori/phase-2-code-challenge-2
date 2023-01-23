@@ -25,19 +25,28 @@ function App() {
     }
   }
 
-  function deleteBot(bot) {
-    const newBot = yourBot.filter(b => b.id !== bot.id)
+  function retireBot(bot) {
+    const newBot = yourBot.filter(delbot => delbot.id !== bot.id)
     setYourBot(newBot)
     
+  }
+
+  function handleClick(bot) {
+    fetch(`BOT_URL${bot.id}`, {
+      method: 'DELETE',
+    }).then(() => {
+      setAllBots((allbots) => allbots.filter((bt) => bt.id !== bot.id))
+      setYourBot((yourBot) => yourBot.filter((x) => x.id !== bot.id))
+    })
   }
 
   return (
     <div className="App">
       <div className='top'>
-        <YourBotArmy props={yourBot} deleteBot={deleteBot}/>
+        <YourBotArmy props={yourBot} retireBot={retireBot} handleClick={handleClick}/>
       </div>
       <div className='bottom'>
-        <BotCollection props={allbots} addBot={addBot} />
+        <BotCollection props={allbots} addBot={addBot} handleClick={handleClick}/>
       </div>
     </div>
   );
